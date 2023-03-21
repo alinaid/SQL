@@ -10,13 +10,13 @@ INSERT INTO store VALUES (5, 'pants', 'blue', 'denim', 25);
 INSERT INTO store VALUES (6, 'sweater', 'green', 'crochet', 37);
 INSERT INTO store VALUES (7, 'cardigan', 'red', 'crochet', 42);
 INSERT INTO store VALUES (8, 'tanktop', 'orange', 'knit', 17);
-INseRT into store values (9, 'bralette', 'brown', 'crochet', 16);
-insert into store values (10, 'mug', 'tan', 'ceramic', 14);
-insert into store values (11, 'socks', 'brown', 'knit', 22);
-insert into store values (12, 'dog toy', 'blue', 'braided', 17);
-insert into store values (13, 'wall decor', 'tan', 'macrame', 57);
-insert into store values (14, 'skirt', 'yellow', 'denim', 21);
-insert into store values (15, 'tanktop', 'purple', 'crochet', 23);
+INSERT INTO store VALUES (9, 'bralette', 'brown', 'crochet', 16);
+INSERT INTO store VALUES (10, 'mug', 'tan', 'ceramic', 14);
+INSERT INTO store VALUES (11, 'socks', 'brown', 'knit', 22);
+INSERT INTO store VALUES (12, 'dog toy', 'blue', 'braided', 17);
+INSERT INTO store VALUES (13, 'wall decor', 'tan', 'macrame', 57);
+INSERT INTO store VALUES (14, 'skirt', 'yellow', 'denim', 21);
+INSERT INTO store VALUES (15, 'tanktop', 'purple', 'crochet', 23);
 
 --display the database ordered by price
 SELECT * FROM store ORDER BY price;
@@ -26,4 +26,4 @@ SELECT * FROM store WHERE price < 20 ORDER BY price;
 
 --does the store carry yellow items?
 SELECT * FROM store WHERE color = 'yellow';
-SELECT max(price) from store
+SELECT MAX(price) FROM store
